@@ -1,0 +1,370 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%; 
+    overflow-x: hidden;
+    max-height: 100%; 
+    overflow-y: hidden;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.nav-position {
+    display: flex;
+    position: relative;
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
+}
+
+.login-position {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.room-code {  
+    align-items: center;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10%;
+    width: 38.5%;
+    background-color: orange;
+    outline: white;
+    color: white;
+    text-align: center;
+}
+
+.room-code-position {
+    margin: 2%;
+    display: inline-flex; 
+}
+
+.menu-button-positioning {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1;
+    margin: 2%;
+}
+
+.menu-button-styling {
+    outline: none !important;
+    background-color: orange !important;
+}
+
+.menu-icon-styling {
+    color: white;
+}
+
+.open-menu {
+    background-color: white;
+    width: 20%;
+    height: 100vh;
+    border: 1px solid orange;
+    position: absolute;
+    right: -20%;
+    transition: right 1s;
+    justify-content: center !important;
+    z-index: 9;
+}
+
+.close-menu {
+    position: absolute;
+    right: 10%;
+    top: 3%;
+    color: orange;
+    cursor: pointer;
+    transition: right 1s;
+    font-size: 30px;
+}
+
+.user-profile {
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    color: orange;
+    cursor: pointer;
+    font-size: 60px;
+    justify-content: center !important;
+}
+
+.user-settings {
+    position: absolute;
+    right: -50vh;
+    top: 25%;
+    width: 80%;
+    height: 30%;
+    border: 1px solid orange ;
+    transition: right 1s;
+}
+
+.menu-icons-size {
+    font-size: 20px;
+    top: 10px;
+    padding-right: 10px;
+    color: grey;
+}
+
+.menu-options-styling {
+    font-size: 16px;
+    font-family: monospace;
+    flex: 1;
+    display: inline;
+    color: grey;
+    margin-top: -1px;
+}
+
+.spacing {
+    padding: 0px 20px;
+    padding-top: 14px;
+}
+
+.menu-icons-positioning {
+    padding: 0px 55px;
+    padding-top: 14px;
+}
+
+.cursor-hover {
+    cursor: pointer;
+}
+
+.shopping-list {
+    width: 70%;
+    height: 60%;
+    border: 1px solid black;
+    align-self: center;
+    border-radius: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.shopping-item {
+    display: flex;
+    width: 20%;
+    height: 75%;
+    flex: 1;
+    margin: 1%; 
+    border: 1px solid black;
+    padding: 10px;
+    align-self: center;
+    border-radius: 20%;
+}
+
+.login-page {
+    display: flex;
+    width: 47%;
+    height: 85%;
+    box-shadow: 1cm;
+}
+
+.header-position {
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 28px;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.login-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    height: 100%; 
+    padding-top: 10%;
+}
+  
+.header-position {
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 28px;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.google-icon-size {
+    width: 8%;
+}
+
+.google-button {
+    border: 1px solid black !important;
+    border-radius: 10%;
+    width: 300px;
+    border-radius: 99em !important;
+    text-align: left !important;
+    padding: 8px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: 400 !important;
+    padding-left: 30px  !important;
+    margin-top: 15px;
+}
+
+button.google-button:focus {
+    outline: none !important;
+
+}
+.has-account {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 40px;
+}
+
+.terms-approval {
+    align-self: center;
+    padding: 20% 10%;
+    font-size: 13px;
+    color: #6B6B6B;
+    line-height: 20px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.link-styling {
+    text-decoration: underline !important;
+}
+
+.centering-settings {
+    width: 100%;
+    height: 100%;
+}
+
+.vc-bar {
+    z-index: -1;
+}
+
+.vc-person {
+    width: 4%;
+    cursor: pointer;
+}
+
+.vc-element {
+    padding: 10px 25px;
+    position: relative;
+}
+
+.vc-description {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    background-color: #fff;
+    left: 7%;
+}
+
+.vc-person:hover + .vc-description {
+    display: block;
+}
+
+.interaction-button {
+    bottom: 0;
+}
+
+.message-interaction {
+    width: 20%;
+}
+
+@media (max-width: 768px) {
+    .room-code {
+        width: 39%;
+    }
+
+    .menu-button-positioning {
+        justify-content: center;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex: 1;
+        margin: 2%;
+    }
+
+    .shopping-list {
+        width: 90%;
+    }
+
+    .shopping-item {
+        width: 30%;
+    }
+
+    .login-page {
+        width: 80%;
+    }
+
+    .user-profile {
+        justify-self: center !important;
+        top: 10%;
+        font-size: 30px;
+    }
+
+    .user-settings {
+        right: -100%;
+        top: 20%;
+        width: 90%;
+        height: 20%;
+    }
+    
+    .open-menu {
+        justify-content: center !important;
+    }
+
+    .close-menu {
+        font-size: 15px;
+    }
+    
+    .menu-icons-positioning {
+        padding: 0px 5px;
+        padding-top: 0px;
+    }
+
+    .menu-icons-size{
+        font-size: 10px;
+    }
+
+    .menu-options-styling {
+        font-size: 10px;
+        margin-top: -2px;
+    }
+
+    .google-button {
+        width: 250px;
+    }
+
+    .vc-person {
+        width: 6%;
+    }
+
+    .vc-description {
+        top: 28%;
+        left: 15%;
+        font-size: 10px;
+    }
+
+    .message-interaction {
+        width: 30%;
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Shopy.land</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type='text/css' />
+    <script src="https://kit.fontawesome.com/40ee529934.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var input = document.getElementById("myInput");
+
+        input.addEventListener("input", function () {
+          this.value = this.value.replace(/[^0-9]/g, "");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="nav-position">
+        <div class="room-code-position">
+          <input class="room-code" type="text" id="myInput" name="myInput" placeholder="723849" maxlength="6">
+        </div>
+        <div  class="menu-button-positioning">
+          <button class="btn menu-button-styling" onclick="openmenu()">
+            <i class="fa-solid fa-bars-staggered menu-icon-styling"></i>
+          </button>
+        </div>
+        <div class="open-menu" id="menu">
+          <i class="fa-regular fa-circle-xmark close-menu" onclick="closemenu()"></i>
+          <i class="fa-regular fa-circle-user user-profile" id="user-profile"></i>
+          <div class="user-settings" id="settings">
+            <center class="centering-settings">
+              <div class="display-flex menu-icons-positioning">
+                <i class="fa-regular fa-circle-user menu-icons-size cursor-hover"></i>
+                <p class="menu-options-styling cursor-hover">Account</p>
+              </div>
+              <div class="display-flex menu-icons-positioning">
+                <i class="fa-solid fa-gear menu-icons-size cursor-hover"></i>
+                <p class="menu-options-styling cursor-hover">Settings</p>
+              </div>
+              <div class="display-flex menu-icons-positioning">
+                <i class="fa-regular fa-credit-card menu-icons-size cursor-hover"></i>
+                <p class="menu-options-styling cursor-hover">Payments</p>
+              </div>
+              <div class="display-flex spacing">
+                <i class="fa-solid fa-users-viewfinder menu-icons-size cursor-hover"></i>
+                <p class="menu-options-styling cursor-hover">Switch account</p>
+              </div>
+              <div class="display-flex menu-icons-positioning">
+                <i class="fa-solid fa-right-from-bracket menu-icons-size cursor-hover"></i>
+                <p class="menu-options-styling cursor-hover">Sign Out</p>
+              </div>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="vc-bar">
+        <div class="vc-element">
+          <img src="images/user-image.png" class="vc-person">
+          <p class="vc-description">Username</p>
+        </div>
+        <div class="vc-element">
+          <img src="images/user-image.png" class="vc-person">
+          <p class="vc-description">Username</p>
+        </div>
+        <div class="vc-element">
+          <img src="images/user-image.png" class="vc-person">
+          <p class="vc-description">Username</p>
+        </div>
+    </div class="interaction-button">
+      <img src="images/message-interaction.png" class="message-interaction">
+    </div>
+    
+    <script>
+      var menu = document.getElementById("menu");
+
+      function closemenu() {
+        menu.style.right = "-100vh";
+        settings.style.right = "-50vh";
+      }
+
+      function openmenu() {
+        menu.style.right = "0";
+      }
+    </script>
+
+    <script>
+      var user_profile = document.getElementById("user-profile");
+      var settings = document.getElementById("settings");
+
+      function toggleSettings() {
+        if (settings.style.right === "10%") {
+          settings.style.right = "-50vh";
+        } else {
+          settings.style.right = "10%";
+        }
+      }
+
+      user_profile.addEventListener("click", toggleSettings);
+    </script>
+  </body>
+</html>
+
+
+
+
+
+<!--
+
+<div class="shopping-list">
+  <div class="shopping-item card text-center">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    <div class="card-footer text-muted">
+      2 days ago
+    </div>
+  </div>
+  <div class="shopping-item">  
+
+  </div>
+  <div class="shopping-item card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="shopping-item card">
+          
+  </div>
+</div>
+
+-->

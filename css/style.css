@@ -238,7 +238,7 @@ button.google-button:focus {
 
 .terms-approval {
     align-self: center;
-    padding: 20% 10%;
+    padding: 2% 10%;
     font-size: 13px;
     color: #6B6B6B;
     line-height: 20px;
@@ -252,10 +252,6 @@ button.google-button:focus {
 .centering-settings {
     width: 100%;
     height: 100%;
-}
-
-.vc-bar {
-    z-index: -1;
 }
 
 .vc-person {
@@ -281,13 +277,48 @@ button.google-button:focus {
     display: block;
 }
 
-.interaction-button {
+.height {
+    text-align: center;
+    position: absolute;
     bottom: 0;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .message-interaction {
-    width: 20%;
+    font-size: 80px;
+    cursor: pointer;
+    color: #FFC400;
+    box-shadow: inset 0px 0px 15px 7px rgba(0, 0, 0, 0.2);
+    padding: 3%;
+    border-radius: 50%;
+    margin: 0 auto;
 }
+  
+
+.align-interaction-button {
+    flex: 1;
+}   
+
+.terms-approval1 {
+    align-self: center;
+    padding: 5% 10%;
+    font-size: 13px;
+    color: #6B6B6B;
+    line-height: 20px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .room-code {
@@ -365,6 +396,7 @@ button.google-button:focus {
     }
 
     .message-interaction {
-        width: 30%;
+        font-size: 55px;
+        padding: 4%;
     }
 }

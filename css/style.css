@@ -408,4 +408,8 @@ button.google-button:focus {
     .menu-icons-size {
         font-size: 15px;
     }
+
+    .user-profile{
+        font-size: 50px;
+    }
 }

@@ -89,6 +89,7 @@ html, body {
     transition: right 1s;
     justify-content: center !important;
     z-index: 9;
+    display: flex;
 }
 
 .close-menu {
@@ -103,7 +104,7 @@ html, body {
 
 .user-profile {
     position: absolute;
-    left: 40%;
+    flex: 1;
     top: 15%;
     color: orange;
     cursor: pointer;
@@ -116,20 +117,18 @@ html, body {
     right: -50vh;
     top: 25%;
     width: 80%;
-    height: 30%;
-    border: 1px solid orange ;
     transition: right 1s;
 }
 
 .menu-icons-size {
     font-size: 20px;
     top: 10px;
-    padding-right: 10px;
+    padding-right: 10%;
     color: grey;
 }
 
 .menu-options-styling {
-    font-size: 16px;
+    font-size: 15px;
     font-family: monospace;
     flex: 1;
     display: inline;
@@ -137,14 +136,9 @@ html, body {
     margin-top: -1px;
 }
 
-.spacing {
-    padding: 0px 20px;
-    padding-top: 14px;
-}
-
 .menu-icons-positioning {
-    padding: 0px 55px;
-    padding-top: 14px;
+    padding: 0% 20%;
+    padding-top: 6%;
 }
 
 .cursor-hover {
@@ -250,8 +244,8 @@ button.google-button:focus {
 }
 
 .centering-settings {
-    width: 100%;
-    height: 100%;
+    border: orange 1px solid;
+    text-align: center;
 }
 
 .vc-person {
@@ -356,7 +350,7 @@ button.google-button:focus {
         right: -100%;
         top: 20%;
         width: 90%;
-        height: 20%;
+        height: 15%;
     }
     
     .open-menu {
@@ -368,8 +362,8 @@ button.google-button:focus {
     }
     
     .menu-icons-positioning {
-        padding: 0px 5px;
-        padding-top: 0px;
+        padding: 0px 5%;
+        padding-top: 5%;
     }
 
     .menu-icons-size{
@@ -377,8 +371,8 @@ button.google-button:focus {
     }
 
     .menu-options-styling {
-        font-size: 10px;
-        margin-top: -2px;
+        font-size: 61%;
+        margin-top: -1px;
     }
 
     .google-button {
@@ -398,5 +392,20 @@ button.google-button:focus {
     .message-interaction {
         font-size: 55px;
         padding: 4%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .menu-options-styling {
+        font-size: 12px;
+    }
+
+    .menu-icons-positioning {
+        padding: 0% 15%;
+        padding-top: 6%;
+    }
+
+    .menu-icons-size {
+        font-size: 15px;
     }
 }

@@ -46,10 +46,6 @@
                 <i class="fa-regular fa-credit-card menu-icons-size cursor-hover"></i>
                 <p class="menu-options-styling cursor-hover">Payments</p>
               </div>
-              <div class="display-flex spacing">
-                <i class="fa-solid fa-users-viewfinder menu-icons-size cursor-hover"></i>
-                <p class="menu-options-styling cursor-hover">Switch account</p>
-              </div>
               <div class="display-flex menu-icons-positioning">
                 <i class="fa-solid fa-right-from-bracket menu-icons-size cursor-hover"></i>
                 <p class="menu-options-styling cursor-hover">Sign Out</p>
@@ -89,20 +85,36 @@
       }
     </script>
 
-    <script>
-      var user_profile = document.getElementById("user-profile");
-      var settings = document.getElementById("settings");
+<script>
+  var user_profile = document.getElementById("user-profile");
+  var settings = document.getElementById("settings");
 
-      function toggleSettings() {
-        if (settings.style.right === "10%") {
-          settings.style.right = "-50vh";
-        } else {
-          settings.style.right = "10%";
-        }
+  function toggleSettings() {
+    if (window.innerWidth <= 768) {
+      if (settings.style.right === "5%") {
+        settings.style.right = "-50vh";
+      } else {
+        settings.style.right = "5%";
       }
+    } else {
+      if (settings.style.right === "10%") {
+        settings.style.right = "-50vh";
+      } else {
+        settings.style.right = "10%";
+      }
+    }
+  }
 
-      user_profile.addEventListener("click", toggleSettings);
-    </script>
+  user_profile.addEventListener("click", toggleSettings);
+
+  if (window.innerWidth <= 768) {
+    settings.style.right = "-50vh";
+  } else {
+    settings.style.right = "-50vh";
+  }
+</script>
+
+
   </body>
 </html>
 

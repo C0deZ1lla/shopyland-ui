@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type='text/css' />
     <script src="https://kit.fontawesome.com/40ee529934.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var input = document.getElementById("myInput");
@@ -68,10 +69,83 @@
           <p class="vc-description">Username</p>
         </div>
       </div> 
-      <div class="height">
+      <div  class="shopping-body" id="shopping-list">
+        <div class="container swiper">
+          <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="images/showImg/fullDev.jpg" alt="" />
+                </div>
+                <div class="profile-details">
+                  <img src="images/profile/profile1.jpg" alt="" />
+                  <div class="name-job">
+                    <h3 class="name">David</h3>
+                    <h4 class="job">Full Stack</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="images/showImg/photographer.jpg" alt="" />
+                </div>
+                <div class="profile-details">
+                  <img src="images/profile/profile2.jpg" alt="" />
+                  <div class="name-job">
+                    <h3 class="name">Siliana</h3>
+                    <h4 class="job">Photographer</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="images/showImg/dataAna.jpg" alt="" />
+                </div>
+                <div class="profile-details">
+                  <img src="images/profile/profile3.jpg" alt="" />
+                  <div class="name-job">
+                    <h3 class="name">Richard</h3>
+                    <h4 class="job">Data</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="images/showImg/appDev.jpg" alt="" />
+                </div>
+                <div class="profile-details">
+                  <img src="images/profile/profile4.jpg" alt="" />
+                  <div class="name-job">
+                    <h3 class="name">Priase</h3>
+                    <h4 class="job">Developer</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="images/showImg/blogger.jpg" alt="" />
+                </div>
+                <div class="profile-details">
+                  <img src="images/profile/profile5.jpg" alt="" />
+                  <div class="name-job">
+                    <h3 class="name">Jame</h3>
+                    <h4 class="job">Blogger</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="height" onclick="toggleShoppingList()">
         <i class="fa-solid fa-comment-dots message-interaction"></i>
       </div>           
     </div>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
       var menu = document.getElementById("menu");
 
@@ -85,35 +159,45 @@
       }
     </script>
 
-<script>
-  var user_profile = document.getElementById("user-profile");
-  var settings = document.getElementById("settings");
+    <script>
+      var user_profile = document.getElementById("user-profile");
+      var settings = document.getElementById("settings");
 
-  function toggleSettings() {
-    if (window.innerWidth <= 768) {
-      if (settings.style.right === "5%") {
+      function toggleSettings() {
+        if (window.innerWidth <= 768) {
+          if (settings.style.right === "5%") {
+            settings.style.right = "-50vh";
+          } else {
+            settings.style.right = "5%";
+          }
+        } else {
+          if (settings.style.right === "10%") {
+            settings.style.right = "-50vh";
+          } else {
+            settings.style.right = "10%";
+          }
+        }
+      }
+
+      user_profile.addEventListener("click", toggleSettings);
+
+      if (window.innerWidth <= 768) {
         settings.style.right = "-50vh";
       } else {
-        settings.style.right = "5%";
-      }
-    } else {
-      if (settings.style.right === "10%") {
         settings.style.right = "-50vh";
-      } else {
-        settings.style.right = "10%";
       }
-    }
-  }
+    </script>
+    <script>
+      var shoppingList = document.getElementById("shopping-list");
 
-  user_profile.addEventListener("click", toggleSettings);
-
-  if (window.innerWidth <= 768) {
-    settings.style.right = "-50vh";
-  } else {
-    settings.style.right = "-50vh";
-  }
-</script>
-
+      function toggleShoppingList() {
+        if (shoppingList.style.display === "none") {
+          shoppingList.style.display = "flex";
+        } else {
+          shoppingList.style.display = "none";
+        }
+      }
+    </script>
 
   </body>
 </html>

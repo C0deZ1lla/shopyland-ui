@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Shopy.land</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type='text/css' />
+  <script src="https://kit.fontawesome.com/40ee529934.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <style>
+#buttons {
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 60px;
+    cursor: pointer;
+    }
+#button-1 {
+  top: 100px; 
+  left: 50px; 
+}
+
+#button-2 {
+  top: 150px; 
+  left: 100px; 
+}
+
+#button-3 {
+  top: 200px; 
+  left: 150px; 
+}
+#vertical-strip {
+ position: fixed;
+ top: 100;
+ right: 0;
+ height: 60%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+      background-color: white;
+      padding: 20px;
+    }
+        #horizontal-strip {
+ align-content: center;
+ top: 800px;
+ right: 0;
+ height: 10%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+      background-color: white;
+      padding: 20px;
+    }
+
+#vertical-buttons {
+    background-color: orange;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 60px;
+    cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+  <div class="main-content">
+    <div class="nav-position">
+      <div class="room-code-position">
+        <input class="room-code" type="text" id="myInput" name="myInput" placeholder="723849" maxlength="6">
+      </div>
+      <div  class="menu-button-positioning">
+        <button class="btn menu-button-styling" onclick="openmenu()">
+          <i class="fa-solid fa-bars-staggered menu-icon-styling"></i>
+        </button>
+      </div>
+      <div class="open-menu" id="menu">
+        <i class="fa-regular fa-circle-xmark close-menu" onclick="closemenu()"></i>
+        <i class="fa-regular fa-circle-user user-profile" id="user-profile"></i>
+        <div class="user-settings" id="settings">
+          <center class="centering-settings">
+            <div class="display-flex menu-icons-positioning">
+              <i class="fa-regular fa-circle-user menu-icons-size cursor-hover"></i>
+              <p class="menu-options-styling cursor-hover">Account</p>
+            </div>
+            <div class="display-flex menu-icons-positioning">
+              <i class="fa-solid fa-gear menu-icons-size cursor-hover"></i>
+              <p class="menu-options-styling cursor-hover">Settings</p>
+            </div>
+            <div class="display-flex menu-icons-positioning">
+              <i class="fa-regular fa-credit-card menu-icons-size cursor-hover"></i>
+              <p class="menu-options-styling cursor-hover">Payments</p>
+            </div>
+            <div class="display-flex menu-icons-positioning">
+              <i class="fa-solid fa-right-from-bracket menu-icons-size cursor-hover"></i>
+              <p class="menu-options-styling cursor-hover">Sign Out</p>
+            </div>
+          </center>
+        </div>
+      </div>
+    </div>
+    <div class="vc-bar">
+      <div class="vc-element">
+        <img src="images/user-image.png" class="vc-person">
+        <p class="vc-description">Friend 1</p>
+      </div>
+      <div class="vc-element">
+        <img src="images/user-image.png" class="vc-person">
+        <p class="vc-description">Friend 2</p>
+      </div>
+      <div class="vc-element">
+        <img src="images/user-image.png" class="vc-person">
+        <p class="vc-description">Friend 3</p>
+      </div>
+    </div> 
+      <div id="horizontal-strip">
+      <section >
+            <button id="vertical-buttons">Button 1</button>
+            <button id="vertical-buttons">Button 2</button>
+            <button id="vertical-buttons">Button 3</button>
+    </section>
+    <div id="vertical-strip">
+    <button id="vertical-buttons">Button 1</button>
+    <button id="vertical-buttons">Button 2</button>
+    <button id="vertical-buttons">Button 3</button>
+  </div>
+    </div>
+  </div>
+</body>
+</html>
